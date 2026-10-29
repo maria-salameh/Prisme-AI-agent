@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prisme</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <a href="#contenu">Aller au contenu</a>
+    <main id="contenu">
+      <h1>Prisme</h1>
+      <ul id="historique" aria-live="polite"></ul>
+      <div id="suggestions" aria-busy="false"></div>
+      <form id="formulaire">
+        <label for="message">Votre message</label>
+        <input id="message" name="message" type="text" required maxlength="235">
+        <button id="envoyer" type="submit">Envoyer</button>
+        <button id="effacer" type="button">Effacer</button>
+        <span id="compteur">0 / 235</span>
+      </form>
+      <p id="statut" aria-live="polite"></p>
+      <p id="mode"></p>
+    </main>
+  </body>
+</html>

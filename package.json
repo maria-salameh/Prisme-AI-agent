@@ -1,0 +1,19 @@
+{
+  "name": "capweb-etudiant",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server/serveur.mjs",
+    "test": "node --test \"tests/unitaires/*.test.mjs\"",
+    "test:moteur": "node --test \"tests/moteur/*.test.mjs\"",
+    "test:publics": "node --test \"tests/publics/*.test.mjs\"",
+    "e2e": "node --test \"tests/e2e/*.test.mjs\"",
+    "lint": "eslint public",
+    "filet": "node scripts/filet.mjs",
+    "verifier-poste": "node scripts/verifier-poste.mjs"
+  },
+  "devDependencies": {
+    "eslint": "10.10.0"
+  }
+}
